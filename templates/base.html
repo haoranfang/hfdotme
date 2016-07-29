@@ -1,13 +1,31 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Haoran Fang</title>
-  <meta name="author" content="Haoran Fang">
-  <meta name="description" content="Personal site of Haoran Fang">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-</head>
-<body>
-{% block body %} {% endblock %}
-</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Haoran Fang">
+    <meta name="description" content="Personal site of Haoran Fang">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Haoran Fang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='dist/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='custom/css/cover.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+    {% block body %} {% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='dist/js/bootstrap.min.js') }}"></script>
+  </body>
 </html>
