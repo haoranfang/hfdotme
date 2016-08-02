@@ -1,12 +1,25 @@
-/* --------------------------
-            Reset
------------------------------ */
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
+html, body {
+  height:100%;
 }
 
-.content {
-  padding: 100
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.content-section {
+  height: 100%; /* fit screen size */
+}
+
+.parallax-window {
+  background: transparent;
 }
