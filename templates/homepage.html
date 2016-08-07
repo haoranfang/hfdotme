@@ -2,22 +2,42 @@
 {% block body %}
 <div class="site-wrapper">
 
-  <div class="site-wrapper-inner">
-      <div id="parallex-content" class="parallax-window content-section"
-      data-parallax="scroll" data-image-src="{{ url_for('static', filename='1.jpg') }}">
-        11111 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.
-      </div>
-      <div id="parallex-content" class="parallax-window content-section"
-      data-parallax="scroll" data-image-src="{{ url_for('static', filename='2.jpg') }}">
-        22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.
-      </div>
-      <div id="parallex-content" class="parallax-window content-section"
-      data-parallax="scroll" data-image-src="{{ url_for('static', filename='3.jpg') }}">
-        33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.
-      </div>
-      <div id="parallex-content" class="parallax-window content-section"
-      data-parallax="scroll" data-image-src="{{ url_for('static', filename='4.jpg') }}">
-        44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.
+  <div class="site-wrapper-inner container-fluid">
+
+      <div id="parallax-content" class="fit-screen-height">
+        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='1.jpg') }}">
+          <div class="middle-center text-center">
+            <div class="text-uppercase"><strong class="inner-center">some header text</strong></div>
+            <div>11111 Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='2.jpg') }}">
+          <div class="middle-center text-center">
+            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <div class="text-uppercase"><strong class="inner-center">some large text</strong></div>
+            <div>11111 Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='3.jpg') }}">
+          <div class="middle-center text-center">
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <div class="text-uppercase"><strong class="inner-center">some large text</strong></div>
+            <div>11111 Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='4.jpg') }}">
+          <div class="middle-center text-center">
+            <p>44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <div class="text-uppercase"><strong class="inner-center">some large text</strong></div>
+            <div>11111 Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
       </div>
   </div>
 
