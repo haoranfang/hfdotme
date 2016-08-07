@@ -32,6 +32,15 @@ html, body {
   font-size: 120px;
 }
 
-.fit-screen-height {
+.fit-screen-height-half {
+  height: 50%;
+}
+
+.navbar-brand>img {
   height: 100%;
+}
+
+.navbar-fix-top, .navbar-static-top {
+  position: absolute;
+  width: 100%;
 }

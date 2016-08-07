@@ -2,25 +2,40 @@
 {% block body %}
 <div class="site-wrapper">
 
-  <div class="site-wrapper-inner container-fluid">
+  <div class="site-wrapper-inner">
+    <nav class="navbar navbar-default navbar-fix-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="{{ url_for('static', filename='icon.ico') }}">
+          </a>
+          <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-      <div id="parallax-content" class="fit-screen-height">
-        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='1.jpg') }}">
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapse-navbar">
+          <ul class="nav navbar-nav">
+          <li><a>HOME</a></li>
+          <li><a>About</a></li>
+          <li><a>Gallery</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div id="parallax-content" class="">
+        <div class="parallex-section no-overflow"  data-image-src="{{ url_for('static', filename='1.jpg') }}">
+
           <div class="middle-center text-center">
-            <div class="text-uppercase"><strong class="inner-center">some header text</strong></div>
+            <strong class="text-uppercase inner-center">some header text</strong>
             <div>11111 Lorem ipsum dolor sit amet</div>
           </div>
         </div>
-        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='2.jpg') }}">
-          <div class="middle-center text-center">
-            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
-            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
-            <p>22222 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
-            <div class="text-uppercase"><strong class="inner-center">some large text</strong></div>
-            <div>11111 Lorem ipsum dolor sit amet</div>
-          </div>
-        </div>
-        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='3.jpg') }}">
+        <div class="fit-screen-height-half no-overflow">
           <div class="middle-center text-center">
             <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
             <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
@@ -29,7 +44,16 @@
             <div>11111 Lorem ipsum dolor sit amet</div>
           </div>
         </div>
-        <div class="fit-screen-height no-overflow" data-parallax="scroll" data-image-src="{{ url_for('static', filename='4.jpg') }}">
+        <div class="parallex-section no-overflow"  data-image-src="{{ url_for('static', filename='4.jpg') }}">
+          <div class="middle-center text-center">
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <p>33333 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
+            <div class="text-uppercase"><strong class="inner-center">some large text</strong></div>
+            <div>11111 Lorem ipsum dolor sit amet</div>
+          </div>
+        </div>
+        <div class="parallex-section no-overflow"  data-image-src="{{ url_for('static', filename='3.jpg') }}">
           <div class="middle-center text-center">
             <p>44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
             <p>44444 Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh. Nunc varius facilisis eros sed erat in in velit quis arcu ornare laoreet.</p>
