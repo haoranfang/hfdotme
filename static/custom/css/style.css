@@ -26,12 +26,6 @@ html, body {
   overflow: hidden;
 }
 
-.inner-center {
-  position: absolute;
-  transform: translateX(-50%);
-  font-size: 120px;
-}
-
 .fit-screen-height-half {
   height: 50%;
 }
@@ -40,7 +34,27 @@ html, body {
   height: 100%;
 }
 
-.navbar-fix-top, .navbar-static-top {
+.navbar-fix-top{
   position: absolute;
   width: 100%;
+  background-color: #ffffff;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+/*  Text size  */
+.text-size-xlarge {
+  font-size: 120px;
+}
+.text-size-large {
+  font-size: 90px;
+}
+.text-size-medium {
+  font-size: 60px;
+}
+.text-size-small {
+  font-size: 30px;
+}
+.text-size-xsmall {
+  font-size: 14px;
 }
