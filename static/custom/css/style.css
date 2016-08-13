@@ -9,6 +9,27 @@ html, body {
   margin: 0;
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
+/*  Text size  */
+.text-size-xlarge {
+  font-size: 120px;
+}
+.text-size-large {
+  font-size: 90px;
+}
+.text-size-medium {
+  font-size: 60px;
+}
+.text-size-small {
+  font-size: 30px;
+}
+.text-size-xsmall {
+  font-size: 14px;
+}
+
 .middle-center {
   position  : relative;;
   top       : 50%;
@@ -17,14 +38,11 @@ html, body {
   padding: 10%;
 }
 
-.no-overflow {
-  overflow: hidden;
-}
-
 .fit-screen-height-half {
   height: 50%;
 }
 
+/* Navbar */
 .navbar-fixed-top{
   position: absolute;
   width: 100%;
@@ -45,21 +63,4 @@ html, body {
 .navbar-nav > li > a {
   font-size: 1.2em;
   letter-spacing: 0.2em;
-}
-
-/*  Text size  */
-.text-size-xlarge {
-  font-size: 120px;
-}
-.text-size-large {
-  font-size: 90px;
-}
-.text-size-medium {
-  font-size: 60px;
-}
-.text-size-small {
-  font-size: 30px;
-}
-.text-size-xsmall {
-  font-size: 14px;
 }
