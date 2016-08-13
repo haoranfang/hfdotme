@@ -1,10 +1,9 @@
 {% extends "base.html" %}
 {% block body %}
-<div class="site-wrapper">
+<div class="container-fluid no-box">
 
-  <div class="site-wrapper-inner">
-    <nav class="navbar navbar-default navbar-fix-top text-uppercase tk-europa">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top no-box text-uppercase tk-europa">
+      <div class="navbar-container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <img alt="Brand" src="{{ url_for('static', filename='icon.ico') }}">
@@ -27,7 +26,7 @@
         </div>
       </div>
     </nav>
-      <div id="parallax-content" class="">
+    <div id="parallax-content">
         <div class="parallex-section no-overflow"  data-image-src="{{ url_for('static', filename='1.jpg') }}">
           <div class="middle-center text-center">
             <strong class="text-size-large inner-center">To See the World</strong>
@@ -62,7 +61,6 @@
           </div>
         </div>
       </div>
-  </div>
 
 </div>
 {% endblock %}

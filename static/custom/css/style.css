@@ -1,18 +1,12 @@
 html, body {
   height: 100%;
-}
-
-.site-wrapper {
-  display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
 }
 
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-  padding: 0px;
+.no-box {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .middle-center {
@@ -20,6 +14,7 @@ html, body {
   top       : 50%;
   left      : 50%;
   transform : translate(-50%,-50%);
+  padding: 10%;
 }
 
 .no-overflow {
@@ -30,14 +25,24 @@ html, body {
   height: 50%;
 }
 
-.navbar-brand>img {
+.navbar-fixed-top{
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+.navbar-container {
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+.navbar-brand > img {
   height: 100%;
 }
 
-.navbar-fix-top{
-  position: absolute;
-  width: 100%;
-  background-color: #ffffff;
+.navbar-nav > li > a {
   font-size: 1.2em;
   letter-spacing: 0.2em;
 }
