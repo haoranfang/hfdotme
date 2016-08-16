@@ -9,5 +9,7 @@ $( window ).ready(function() {
     .css("background-position-x", "40%"); // 40% offset for background image
 })
 .resize(function() {
-  $('.parallax-section-image').css("height", $( window ).innerHeight() + "px")
+  if (!navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+    $('.parallax-section-image').css("height", $( window ).innerHeight() + "px")
+  }
 });
